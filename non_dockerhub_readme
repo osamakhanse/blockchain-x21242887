@@ -1,0 +1,37 @@
+Use following command if you are not using docker pull command. use the following way to test my code
+
+
+------------------------------------------------------
+
+Install all these below:
+
+sudo apt install docker.io
+python3 -m venv env
+source env/bin/activate
+pip install python-decouple
+pip install web3
+
+
+
+-------------------------------------------------------
+
+
+Use these commands to build and run docker image:
+
+sudo docker build --tag nci02 .
+sudo docker run --name ncilab02 -p 8090:8080 nci02
+
+
+
+-------------------------------------------------------
+
+User this command to transfer token to the second account
+
+curl --header "Content-Type: application/json" --request POST --data '{"address":"0x3464CaaF9A319d573cC11626AECe55Fea56f64D2"}' http://localhost:8090/token
+
+
+
+--------------------------------------------------------
+
+
+

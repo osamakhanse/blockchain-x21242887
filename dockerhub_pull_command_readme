@@ -1,0 +1,4 @@
+
+You can pull my Python Application docker image using this command in docker 
+
+sudo docker pull osamakhanse/x21242887-blockchain-python:2
